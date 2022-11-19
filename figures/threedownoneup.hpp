@@ -4,7 +4,7 @@
 #include <allegro5/color.h>
 #include "../Gameobject.hpp"
 
-class Threedownoneup:public Gameobject {
+class Threedownoneup:public GameObject {
 public:
     Threedownoneup();
     ~Threedownoneup() = default;

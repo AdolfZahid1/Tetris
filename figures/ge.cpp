@@ -6,5 +6,5 @@ color_()
 }
 
 void Ge::Draw() {
-    Square();
+    //Square();
 }

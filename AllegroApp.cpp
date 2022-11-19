@@ -3,11 +3,9 @@
 AllegroApp::AllegroApp():
 AllegroBase()
 {
-    for( int i = 0; i < MAX; ++i )
-    {
-    ScreenSaver::Instance().Add( new Square(20) );
+    ScreenSaver::Instance().Add(reinterpret_cast<PFigure>(new Mainborder()));
 //    sleep( 5 );
-    }
+
 }
 void AllegroApp::Fps(){
     ScreenSaver::Instance().Next();

@@ -1,6 +1,6 @@
 #include "AllegroBase.hpp"
 #include <iostream>
-
+#include <allegro5/allegro_audio.h>
 using namespace std;
 
 

@@ -3,7 +3,7 @@
 
 #include <allegro5/color.h>
 #include "../Gameobject.hpp"
-class Row:public Gameobject {
+class Row:public GameObject {
 public:
     Row();
     ~Row()=default;

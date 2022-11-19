@@ -5,11 +5,13 @@
 #include <allegro5/allegro.h>
 #include <allegro5/allegro_primitives.h>
 #include "vector"
+#include "Mainborder.hpp"
+
 typedef Figure * PFigure;
 class ScreenSaver
 {
     public:
-        //PFigure Figure();
+        Mainborder m1;
         static ScreenSaver &Instance()
         {
             static ScreenSaver instance;
@@ -22,7 +24,6 @@ class ScreenSaver
         ScreenSaver();
         int size_;
         virtual ~ScreenSaver();
-       // PFigure figures[MAX];
        std::vector<PFigure> figures;
 };
 #endif //PROGMEISTAR_SCREENSAVER_HPP
