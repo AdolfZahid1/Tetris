@@ -1,7 +1,7 @@
 #include "Kvadrat.hpp"
 
-Kvadrat::Kvadrat():
-color_()
+Kvadrat::Kvadrat(double x1, double x2, double y1, double y2) :
+        GameObject(x1, x2, y1, y2), color_()
 {
 }
 

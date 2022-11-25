@@ -6,7 +6,7 @@
 
 class Kvadrat: public GameObject {
 public:
-    Kvadrat();
+    Kvadrat(double x1, double x2, double y1, double y2);
     ~Kvadrat() = default;
     void Draw();
 private:
