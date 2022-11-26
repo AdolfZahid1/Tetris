@@ -6,7 +6,7 @@
 #include <allegro5/allegro_primitives.h>
 #include "vector"
 #include "Mainborder.hpp"
-
+#include <iostream>
 typedef Figure * PFigure;
 class ScreenSaver
 {

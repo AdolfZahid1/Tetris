@@ -3,7 +3,7 @@
 AllegroApp::AllegroApp():
 AllegroBase()
 {
-    ScreenSaver::Instance().Add(reinterpret_cast<PFigure>(new Mainborder()));
+    //ScreenSaver::Instance().Add(reinterpret_cast<PFigure>(new Mainborder()));
 //    sleep( 5 );
 
 }

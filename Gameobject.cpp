@@ -12,10 +12,11 @@ void GameObject::Reset() {
 
 }
 
-void GameObject::Move(std::vector<GameObject> Object) {
-    for (int i = 0 ;i < Object.size();i++) {
-        Object.at(i).y1 += SCREEN_H*0.003;
-        Object.at(i).y2 += SCREEN_H*0.003;
+void GameObject::Move(std::vector<GameObject> Object,double kspeed) {
+    for (auto & i : Object) {
+        kspeed = kspeed * 0.001;
+        i.y1 += SCREEN_H*kspeed;
+        i.y2 += SCREEN_H*kspeed;
     }
 }
 

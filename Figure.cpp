@@ -1,5 +1,6 @@
 #include "Figure.hpp"
 #include <allegro5/allegro.h>
+#include <bits/stdc++.h>
 #include <allegro5/allegro_primitives.h>
 Figure::Figure():
     x_(),

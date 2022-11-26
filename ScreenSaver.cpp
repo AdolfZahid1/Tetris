@@ -20,6 +20,7 @@ void ScreenSaver::Draw() {
     }
 }
 void ScreenSaver::Next() {
+
     for( int i = 0; i < size_; ++i )
     {
         figures.at(i)->Move();

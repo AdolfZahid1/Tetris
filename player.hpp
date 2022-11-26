@@ -8,6 +8,8 @@ public:
     ~Player() = default;
     void Move();
     void Rotate();
+protected:
+    int level;
 };
 
 

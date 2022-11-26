@@ -11,7 +11,7 @@ public:
     ~GameObject() = default;
     void Reset();
     virtual void Rotate(float x,float y)=0;
-    static void Move(std::vector<GameObject>Object);
+    static void Move(std::vector<GameObject>Object, double kspeed);
     static void Draw(const std::vector<GameObject>&Object, ALLEGRO_COLOR color);
 protected:
     double x1;

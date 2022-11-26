@@ -79,59 +79,11 @@ build CMakeFiles/Tetris.dir/ScreenSaver.cpp.obj: CXX_COMPILER__Tetris_Debug C$:/
   OBJECT_DIR = CMakeFiles\Tetris.dir
   OBJECT_FILE_DIR = CMakeFiles\Tetris.dir
 
-build CMakeFiles/Tetris.dir/square.cpp.obj: CXX_COMPILER__Tetris_Debug C$:/Users/AdolfZahid/CLionProjects/Tetris/square.cpp || cmake_object_order_depends_target_Tetris
-  DEP_FILE = CMakeFiles\Tetris.dir\square.cpp.obj.d
-  FLAGS = -std=c++11 -g
-  OBJECT_DIR = CMakeFiles\Tetris.dir
-  OBJECT_FILE_DIR = CMakeFiles\Tetris.dir
-
 build CMakeFiles/Tetris.dir/Mainborder.cpp.obj: CXX_COMPILER__Tetris_Debug C$:/Users/AdolfZahid/CLionProjects/Tetris/Mainborder.cpp || cmake_object_order_depends_target_Tetris
   DEP_FILE = CMakeFiles\Tetris.dir\Mainborder.cpp.obj.d
   FLAGS = -std=c++11 -g
   OBJECT_DIR = CMakeFiles\Tetris.dir
   OBJECT_FILE_DIR = CMakeFiles\Tetris.dir
-
-build CMakeFiles/Tetris.dir/figures/row.cpp.obj: CXX_COMPILER__Tetris_Debug C$:/Users/AdolfZahid/CLionProjects/Tetris/figures/row.cpp || cmake_object_order_depends_target_Tetris
-  DEP_FILE = CMakeFiles\Tetris.dir\figures\row.cpp.obj.d
-  FLAGS = -std=c++11 -g
-  OBJECT_DIR = CMakeFiles\Tetris.dir
-  OBJECT_FILE_DIR = CMakeFiles\Tetris.dir\figures
-
-build CMakeFiles/Tetris.dir/figures/Kvadrat.cpp.obj: CXX_COMPILER__Tetris_Debug C$:/Users/AdolfZahid/CLionProjects/Tetris/figures/Kvadrat.cpp || cmake_object_order_depends_target_Tetris
-  DEP_FILE = CMakeFiles\Tetris.dir\figures\Kvadrat.cpp.obj.d
-  FLAGS = -std=c++11 -g
-  OBJECT_DIR = CMakeFiles\Tetris.dir
-  OBJECT_FILE_DIR = CMakeFiles\Tetris.dir\figures
-
-build CMakeFiles/Tetris.dir/figures/threedownoneup.cpp.obj: CXX_COMPILER__Tetris_Debug C$:/Users/AdolfZahid/CLionProjects/Tetris/figures/threedownoneup.cpp || cmake_object_order_depends_target_Tetris
-  DEP_FILE = CMakeFiles\Tetris.dir\figures\threedownoneup.cpp.obj.d
-  FLAGS = -std=c++11 -g
-  OBJECT_DIR = CMakeFiles\Tetris.dir
-  OBJECT_FILE_DIR = CMakeFiles\Tetris.dir\figures
-
-build CMakeFiles/Tetris.dir/figures/Lebedjpravo.cpp.obj: CXX_COMPILER__Tetris_Debug C$:/Users/AdolfZahid/CLionProjects/Tetris/figures/Lebedjpravo.cpp || cmake_object_order_depends_target_Tetris
-  DEP_FILE = CMakeFiles\Tetris.dir\figures\Lebedjpravo.cpp.obj.d
-  FLAGS = -std=c++11 -g
-  OBJECT_DIR = CMakeFiles\Tetris.dir
-  OBJECT_FILE_DIR = CMakeFiles\Tetris.dir\figures
-
-build CMakeFiles/Tetris.dir/figures/Lebedjlevo.cpp.obj: CXX_COMPILER__Tetris_Debug C$:/Users/AdolfZahid/CLionProjects/Tetris/figures/Lebedjlevo.cpp || cmake_object_order_depends_target_Tetris
-  DEP_FILE = CMakeFiles\Tetris.dir\figures\Lebedjlevo.cpp.obj.d
-  FLAGS = -std=c++11 -g
-  OBJECT_DIR = CMakeFiles\Tetris.dir
-  OBJECT_FILE_DIR = CMakeFiles\Tetris.dir\figures
-
-build CMakeFiles/Tetris.dir/figures/ge.cpp.obj: CXX_COMPILER__Tetris_Debug C$:/Users/AdolfZahid/CLionProjects/Tetris/figures/ge.cpp || cmake_object_order_depends_target_Tetris
-  DEP_FILE = CMakeFiles\Tetris.dir\figures\ge.cpp.obj.d
-  FLAGS = -std=c++11 -g
-  OBJECT_DIR = CMakeFiles\Tetris.dir
-  OBJECT_FILE_DIR = CMakeFiles\Tetris.dir\figures
-
-build CMakeFiles/Tetris.dir/figures/Gelevo.cpp.obj: CXX_COMPILER__Tetris_Debug C$:/Users/AdolfZahid/CLionProjects/Tetris/figures/Gelevo.cpp || cmake_object_order_depends_target_Tetris
-  DEP_FILE = CMakeFiles\Tetris.dir\figures\Gelevo.cpp.obj.d
-  FLAGS = -std=c++11 -g
-  OBJECT_DIR = CMakeFiles\Tetris.dir
-  OBJECT_FILE_DIR = CMakeFiles\Tetris.dir\figures
 
 build CMakeFiles/Tetris.dir/player.cpp.obj: CXX_COMPILER__Tetris_Debug C$:/Users/AdolfZahid/CLionProjects/Tetris/player.cpp || cmake_object_order_depends_target_Tetris
   DEP_FILE = CMakeFiles\Tetris.dir\player.cpp.obj.d
@@ -153,7 +105,7 @@ build CMakeFiles/Tetris.dir/Gameobject.cpp.obj: CXX_COMPILER__Tetris_Debug C$:/U
 #############################################
 # Link the executable Tetris.exe
 
-build Tetris.exe: CXX_EXECUTABLE_LINKER__Tetris_Debug CMakeFiles/Tetris.dir/AllegroBase.cpp.obj CMakeFiles/Tetris.dir/main.cpp.obj CMakeFiles/Tetris.dir/AllegroApp.cpp.obj CMakeFiles/Tetris.dir/Figure.cpp.obj CMakeFiles/Tetris.dir/ScreenSaver.cpp.obj CMakeFiles/Tetris.dir/square.cpp.obj CMakeFiles/Tetris.dir/Mainborder.cpp.obj CMakeFiles/Tetris.dir/figures/row.cpp.obj CMakeFiles/Tetris.dir/figures/Kvadrat.cpp.obj CMakeFiles/Tetris.dir/figures/threedownoneup.cpp.obj CMakeFiles/Tetris.dir/figures/Lebedjpravo.cpp.obj CMakeFiles/Tetris.dir/figures/Lebedjlevo.cpp.obj CMakeFiles/Tetris.dir/figures/ge.cpp.obj CMakeFiles/Tetris.dir/figures/Gelevo.cpp.obj CMakeFiles/Tetris.dir/player.cpp.obj CMakeFiles/Tetris.dir/Gameobject.cpp.obj
+build Tetris.exe: CXX_EXECUTABLE_LINKER__Tetris_Debug CMakeFiles/Tetris.dir/AllegroBase.cpp.obj CMakeFiles/Tetris.dir/main.cpp.obj CMakeFiles/Tetris.dir/AllegroApp.cpp.obj CMakeFiles/Tetris.dir/Figure.cpp.obj CMakeFiles/Tetris.dir/ScreenSaver.cpp.obj CMakeFiles/Tetris.dir/Mainborder.cpp.obj CMakeFiles/Tetris.dir/player.cpp.obj CMakeFiles/Tetris.dir/Gameobject.cpp.obj
   FLAGS = -std=c++11 -g
   LINK_LIBRARIES = -lallegro  -lallegro_primitives  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Tetris.dir
