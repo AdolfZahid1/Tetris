@@ -6,8 +6,9 @@
 #include <allegro5/allegro_primitives.h>
 #include "vector"
 #include "Mainborder.hpp"
+#include "Gameobject.hpp"
 #include <iostream>
-typedef Figure * PFigure;
+typedef GameObject * PFigure;
 class ScreenSaver
 {
     public:

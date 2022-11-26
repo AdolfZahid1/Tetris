@@ -1,7 +1,7 @@
 #include "ScreenSaver.hpp"
 #include "vector"
 ScreenSaver::ScreenSaver() {
-    std::vector<PFigure> figures ;
+    std::vector<PFigure> figures;
 }
 ScreenSaver::~ScreenSaver(){
     for( int i = 0; i < size_; ++i )
