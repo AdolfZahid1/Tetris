@@ -1,6 +1,40 @@
 #include "ScreenSaver.hpp"
 #include "vector"
-ScreenSaver::ScreenSaver() {
+ScreenSaver::ScreenSaver():
+predefined_figures{{
+    gusj_pravo,
+    square,
+    gusj_levo
+}},
+gusj_pravo{{
+    {303,306,39,43},
+    {306,309,39,43},
+    {306,309,43,46},
+    {309,311,43,46}
+}},
+square{{
+    {303,306,39,43},
+    {303,306,39,43},
+    {303,306,43,46},
+    {303,306,43,46}
+}},
+gusj_levo{{
+    {309,311,39,43},
+    {306,309,39,43},
+    {306,309,43,46},
+    {303,306,43,46}
+}},
+row{{
+    {},
+    {},
+    {},
+    {}
+}},
+predefined_figures_big{{
+{},
+{}
+}}
+{
     std::vector<PFigure> figures;
 }
 ScreenSaver::~ScreenSaver(){

@@ -4,7 +4,6 @@
 #include "Constants.hpp"
 #include <allegro5/allegro.h>
 #include <allegro5/allegro_primitives.h>
-#include "vector"
 #include "Mainborder.hpp"
 #include "Gameobject.hpp"
 #include <iostream>
@@ -25,6 +24,12 @@ class ScreenSaver
         ScreenSaver();
         int size_;
         virtual ~ScreenSaver();
-       std::vector<PFigure> figures;
+        double predefined_figures[20][4];
+        double predefined_figures_big[2][6];
+        double gusj_pravo[4][4];
+        double square;
+        double gusj_levo;
+        double row;
+        std::vector<PFigure> figures;
 };
 #endif //PROGMEISTAR_SCREENSAVER_HPP
