@@ -21,6 +21,7 @@ class AllegroBase
         ALLEGRO_DISPLAY *alDisplay_;
         ALLEGRO_EVENT_QUEUE *alEventQueue_;
         ALLEGRO_TIMER *alTimer_;
+        bool alKeyboard_;
 
     private:
         bool exit_;

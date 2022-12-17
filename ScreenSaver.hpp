@@ -28,5 +28,6 @@ class ScreenSaver
         double predefined_figures[5][4][4];
         double predefined_figures_big[2][6][4];
         std::vector<PFigure> figures;
+        std::vector<double> figures_;
 };
 #endif //PROGMEISTAR_SCREENSAVER_HPP

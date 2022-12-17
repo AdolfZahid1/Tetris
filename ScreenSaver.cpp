@@ -65,6 +65,20 @@ void ScreenSaver::Draw() {
 
     al_clear_to_color( al_map_rgb( 255, 255, 255 ) );
     m1.Draw();
+    int choice = rand() % 7 + 1;
+    if (choice <=5){
+        for ( int i = 0; i < 4;i++) {
+            for ( int j = 0; j < 4; j++) {
+                GameObject::Draw(predefined_figures[choice][i][j],(255,255,0));
+            }
+        }
+    }else{
+        for ( int i = 0; i < 6;i++) {
+            for ( int j = 0; j < 4; j++) {
+                GameObject::Draw(predefined_figures_big[choice][i][j]);
+            }
+        }
+    }
     for( int i = 0; i < size_; ++i )
     {
         figures.at(i)->Draw();
@@ -78,10 +92,11 @@ void ScreenSaver::Next() {
     }
 }
 void ScreenSaver::Add(Figure *f) {
+
     if ( size_ >= MAX )
     {
         return;
     }
-    figures.push_back( f );
+    ( f );
     ++size_;
 }

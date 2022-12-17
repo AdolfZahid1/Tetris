@@ -25,14 +25,14 @@ bool AllegroBase::Init( int screenWidth, int screenHeight, int fps )
         return false;
     }
 
-    alTimer_ = al_create_timer( 1.0 / fps );
+    alTimer_ = al_create_timer( 1.0 / fps ); // create timer
     if( !alTimer_ )
     {
         cout << "failed to create timer!" << endl;
         return false;
     }
 
-    alDisplay_ = al_create_display( screenWidth, screenHeight );
+    alDisplay_ = al_create_display( screenWidth, screenHeight ); // create screen
     if( !alDisplay_ )
     {
         cout << "failed to create display!" << endl;
@@ -45,7 +45,7 @@ bool AllegroBase::Init( int screenWidth, int screenHeight, int fps )
         return false;
     }
 
-    alEventQueue_ = al_create_event_queue();
+    alEventQueue_ = al_create_event_queue(); // create event queue
     if( !alEventQueue_ )
     {
         cout << "failed to create event queue!" << endl;
@@ -55,6 +55,11 @@ bool AllegroBase::Init( int screenWidth, int screenHeight, int fps )
     al_register_event_source( alEventQueue_, al_get_display_event_source( alDisplay_ ) );
     al_register_event_source( alEventQueue_, al_get_timer_event_source( alTimer_ ) );
 
+    alKeyboard_ = al_install_keyboard(); // install keyboard driver
+    if (!alKeyboard_){
+        cout << "failed to install keyboard driver!" << endl;
+        return false;
+    }
     exit_ = false;
 
     return true;
@@ -79,6 +84,11 @@ void AllegroBase::Destroy()
     {
         al_destroy_event_queue( alEventQueue_ );
         alEventQueue_ = 0;
+    }
+    if (alKeyboard_)
+    {
+        al_uninstall_keyboard();
+        alKeyboard_ = false;
     }
 
 }
