@@ -7,6 +7,7 @@
 #include "Mainborder.hpp"
 #include "Gameobject.hpp"
 #include <iostream>
+#include <time.h>
 typedef GameObject * PFigure;
 class ScreenSaver
 {
@@ -24,12 +25,8 @@ class ScreenSaver
         ScreenSaver();
         int size_;
         virtual ~ScreenSaver();
-        double predefined_figures[20][4];
-        double predefined_figures_big[2][6];
-        double gusj_pravo[4][4];
-        double square;
-        double gusj_levo;
-        double row;
+        double predefined_figures[5][4][4];
+        double predefined_figures_big[2][6][4];
         std::vector<PFigure> figures;
 };
 #endif //PROGMEISTAR_SCREENSAVER_HPP
