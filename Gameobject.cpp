@@ -12,11 +12,11 @@ void GameObject::Reset() {
 
 }
 
-void GameObject::Move(std::vector<GameObject> Object,double kspeed) {
+void GameObject::Move(std::vector<GameObject> Object) {
+    double speed_coef = 2 * 0.001;
     for (auto & i : Object) {
-        kspeed = kspeed * 0.001;
-        i.y1 += SCREEN_H*kspeed;
-        i.y2 += SCREEN_H*kspeed;
+        i.y1 += SCREEN_H * speed_coef;
+        i.y2 += SCREEN_H * speed_coef;
     }
 }
 
