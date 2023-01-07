@@ -8,7 +8,7 @@
 #include "Gameobject.hpp"
 #include <iostream>
 #include <time.h>
-typedef GameObject * PFigure;
+typedef GameObject * PObj;
 class ScreenSaver
 {
     public:
@@ -20,14 +20,14 @@ class ScreenSaver
         }
         void Draw();
         void Next();
-        void Add( PFigure f );
+        void Add( PObj f );
     private:
         ScreenSaver();
         int size_;
         virtual ~ScreenSaver();
-        double predefined_figures[5][4][4];
-        double predefined_figures_big[2][6][4];
-        std::vector<PFigure> figures;
+        PObj predefined_figures[5][4][4];
+        PObj predefined_figures_big[2][6][4];
+        std::vector<PObj> figures;
         std::vector<double> figures_;
 };
 #endif //PROGMEISTAR_SCREENSAVER_HPP

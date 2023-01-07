@@ -52,7 +52,7 @@ predefined_figures_big{
     }
 }
 {
-    std::vector<PFigure> figures;
+    std::vector<PObj> figures;
 }
 ScreenSaver::~ScreenSaver(){
     for( int i = 0; i < size_; ++i )
@@ -66,37 +66,48 @@ void ScreenSaver::Draw() {
     al_clear_to_color( al_map_rgb( 255, 255, 255 ) );
     m1.Draw();
     int choice = rand() % 7 + 1;
-    if (choice <=5){
+    if (choice <= 5){
         for ( int i = 0; i < 4;i++) {
             for ( int j = 0; j < 4; j++) {
-                GameObject::Draw(predefined_figures[choice][i][j],(255,255,0));
+                switch ( choice ) {
+                    case 1:
+                        GameObject::Draw(predefined_figures[choice][i][j],(255,255,0));
+                    case 2:
+                        GameObject::Draw(predefined_figures[choice][i][j],(0,255,255));
+                    case 3:
+                        GameObject::Draw(predefined_figures[choice][i][j],(126,255,0));
+                    case 4:
+                        GameObject::Draw(predefined_figures[choice][i][j],(255,126,60));
+                    case 5:
+                        GameObject::Draw(predefined_figures[choice][i][j],(255,124,0));
+                    default:
+                        Add(predefined_figures[choice][i][j]);
+                        break;
+                }
             }
         }
     }else{
         for ( int i = 0; i < 6;i++) {
             for ( int j = 0; j < 4; j++) {
-                GameObject::Draw(predefined_figures_big[choice][i][j]);
+                if (choice == 6) {
+                    GameObject::Draw(predefined_figures_big[choice][i][j], (255, 255, 0));
+                }else{
+                    GameObject::Draw(predefined_figures_big[choice][i][j], (255, 0, 255));
+                }
+                Add(predefined_figures[choice][i][j]);
             }
         }
-    }
-    for( int i = 0; i < size_; ++i )
-    {
-        figures.at(i)->Draw();
     }
 }
 void ScreenSaver::Next() {
 
     for( int i = 0; i < size_; ++i )
     {
-        figures.at(i)->Move();
+        figures.at(i)->GameObject::Move();
     }
 }
 void ScreenSaver::Add(Figure *f) {
 
-    if ( size_ >= MAX )
-    {
-        return;
-    }
-    ( f );
+    figures.push_back(f);
     ++size_;
 }
