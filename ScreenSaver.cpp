@@ -3,16 +3,16 @@
 ScreenSaver::ScreenSaver():
 predefined_figures{
         {// gusj_pravo
-            {303,306,39,43},
-            {306,309,39,43},
-            {306,309,43,47},
-            {309,311,43,47}
+            PObj(303, 306, 39, 43),
+            PObj(306, 309, 39, 43),
+            PObj(306, 309, 43, 47),
+            PObj(309, 311, 43, 47)
         },
         { // square
-            {303,306,39,43},
-            {303,306,39,43},
-            {303,306,43,47},
-            {303,306,43,47}
+            {303, 306, 39, 43},
+            {303, 306, 39, 43},
+            {303, 306, 43, 47},
+            {303, 306, 43, 47}
         },
         { // gusj_levo
             {309,311,39,43},
@@ -50,7 +50,8 @@ predefined_figures_big{
         {306,309,27,31},
         {306,309,23,27}
     }
-}
+},
+rd()
 {
     std::vector<PObj> figures;
 }
@@ -65,13 +66,15 @@ void ScreenSaver::Draw() {
 
     al_clear_to_color( al_map_rgb( 255, 255, 255 ) );
     m1.Draw();
-    int choice = rand() % 7 + 1;
+    std::mt19937 mt(rd());
+    std::uniform_int_distribution<int> choice_rnd(0, 7);
+    int choice = choice_rnd(mt);
     if (choice <= 5){
         for ( int i = 0; i < 4;i++) {
             for ( int j = 0; j < 4; j++) {
                 switch ( choice ) {
                     case 1:
-                        GameObject::Draw(predefined_figures[choice][i][j],(255,255,0));
+                        GameObject::Draw(static_cast<const std::vector <GameObject> &>(predefined_figures[choice][i][j]), (255,255,0));
                     case 2:
                         GameObject::Draw(predefined_figures[choice][i][j],(0,255,255));
                     case 3:

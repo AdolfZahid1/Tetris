@@ -1,11 +1,11 @@
 # ninja log v5
-11	306	6911625691733922	CMakeFiles/Tetris.dir/AllegroBase.cpp.obj	f862bc50d343685b
-6	899	6911657117153681	CMakeFiles/Tetris.dir/main.cpp.obj	168b8068af7f69b2
-3	275	6911657110908321	CMakeFiles/Tetris.dir/AllegroApp.cpp.obj	1895bd49be1109c8
-9	728	6911646505632715	CMakeFiles/Tetris.dir/Figure.cpp.obj	972593376c6d0c6
-3	37	6911651506987785	CMakeFiles/Tetris.dir/player.cpp.obj	555341e4bb3fead2
+9	533	6947936126191168	CMakeFiles/Tetris.dir/AllegroBase.cpp.obj	9222e16eaff98d5d
+3	1329	6947936134160046	CMakeFiles/Tetris.dir/main.cpp.obj	7ac3d7f4ce1fcce8
+18	637	6947936127232061	CMakeFiles/Tetris.dir/AllegroApp.cpp.obj	94d7c78b6c60477f
+24	997	6947936130840170	CMakeFiles/Tetris.dir/Figure.cpp.obj	289503d5a80dc584
+39	288	6947936123739069	CMakeFiles/Tetris.dir/player.cpp.obj	3b388926ce8a6bbe
 3	282	6911670381169665	CMakeFiles/Tetris.dir/ScreenSaver.cpp.obj	4b4feb7833836236
 282	379	6911670382100460	Tetris.exe	2684a5cf6b499f17
-2	83	6911669728191777	CMakeFiles/Tetris.dir/Mainborder.cpp.obj	29b4e0830bcc45bb
-2	101	6917684956149151	build.ninja	3ab8a84f0d807c8e
-13	174	6911646500087955	CMakeFiles/Tetris.dir/Gameobject.cpp.obj	16de75f63aed0513
+29	323	6947936124094366	CMakeFiles/Tetris.dir/Mainborder.cpp.obj	9d796c4007cd595e
+2	101	6947954826650462	build.ninja	3ab8a84f0d807c8e
+33	396	6947936124819990	CMakeFiles/Tetris.dir/Gameobject.cpp.obj	a0553594243ead47

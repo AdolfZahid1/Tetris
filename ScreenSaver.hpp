@@ -7,7 +7,8 @@
 #include "Mainborder.hpp"
 #include "Gameobject.hpp"
 #include <iostream>
-#include <time.h>
+#include <cmath>
+#include <random>
 typedef GameObject * PObj;
 class ScreenSaver
 {
@@ -25,9 +26,11 @@ class ScreenSaver
         ScreenSaver();
         int size_;
         virtual ~ScreenSaver();
-        PObj predefined_figures[5][4][4];
+        PObj predefined_figures[5][4];
         PObj predefined_figures_big[2][6][4];
         std::vector<PObj> figures;
         std::vector<double> figures_;
+        std::random_device rd;
+
 };
 #endif //PROGMEISTAR_SCREENSAVER_HPP
